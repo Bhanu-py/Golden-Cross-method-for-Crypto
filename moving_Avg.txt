@@ -1,0 +1,21 @@
+~~~~~~ Moving Average Algorithm ~~~~~~~
+
+~~~~~~~~~~~~~~~~ Bitcoin trend using short and long term moving averages ~~~~~~~~~~~
+
+-- Buying and Selling signals by comparing shoet and long term moving avgs
+
+--	MA(x) = sum(cp_t + cp_t-1 + cp_t-2 + ... + cp_t-x) / x
+--	MA(y) = sum(cp_t + cp_t-1 + cp_t-2 + ... + cp_t-y) / y
+--	x = short term period
+--	y = long term period
+
+##### Condition for Buying and Selling signal ######
+
+--	MA(short) > MA(long) at the intersection == signal to SELL --- strong evidence of rise in CP
+--	MA(short) < MA(long) at the intersection == signal to BUY
+
+~~~~~~~~~~~~ Packages ~~~~~~~~~~~
+-- Pandas
+-- NumPy
+-- Yfinance
+-- Plotly (optional)
